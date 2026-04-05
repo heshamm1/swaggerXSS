@@ -13,7 +13,7 @@ paths:
       parameters: # Bellow, You can add a malicious link or add the link with XSS Vulnerability more information: https://github.com/VictorNS69/swagger-ui-xss
       - description: |
           You need to add the <b>Authorization Code</b> to use the API.
-          Please check this <a href=<LINK><b>link</b></a> 
+          Please check this <svg/onload=confirm(1)> <img onerror="alert(1)"> 
         format: int64
         in: path
         name: Authorization
